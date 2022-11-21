@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import Script from 'next/script'
+import Script from 'next/script'
 
 export default function Home() {
     return (
@@ -17,8 +17,7 @@ export default function Home() {
                 <link rel="stylesheet" href="/css/default-css.css" />
                 <link rel="stylesheet" href="/css/style.css" />
                 <link rel="stylesheet" href="/css/responsive.css" />
-
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link> */}
                 <Script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"/>
                 <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"/>
                 <Script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"/>
@@ -34,7 +33,7 @@ export default function Home() {
                 <Script src="/js/countdown.js"/>
                 <Script src="/js/jquery-sticky-menu.js"/>
                 <Script src="/js/validation.js"/>
-                <Script src="/js/main.js"/> */}
+                <Script src="/js/main.js"/>
             </Head>
 
             <main id="home">
@@ -72,7 +71,7 @@ export default function Home() {
                         </div>
                     </div>
                 </header>
-                {/* <div className="slider-area slider-style-2 slider-two parallax">
+                <div className="slider-area slider-style-2 slider-two parallax">
                     <div className="swiper-container">
                         <div className="swiper-wrapper">
                             <div className="single-slider swiper-slide">
@@ -106,9 +105,9 @@ export default function Home() {
                             <i className="fa fa-angle-left"></i>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
-                {/* <div className="count-down-area">
+                <div className="count-down-area">
                     <section className="count-down-section section-padding parallax" data-speed="7">
                         <div className="container">
                             <div className="row">
@@ -457,7 +456,7 @@ export default function Home() {
                     <button className="music-box-toggle-btn">
                         <i className="fa fa-music" aria-hidden="true"></i>
                     </button>
-                </div> */}
+                </div>
             </main>
 
         </div>
