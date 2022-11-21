@@ -236,21 +236,21 @@
     /*================================
     Magnific Popup
     ==================================*/
-    // if ($(".expand-img").length) {
-    //     $('.expand-img').magnificPopup({
-    //         type: 'image',
-    //         gallery: {
-    //             enabled: true
-    //         }
-    //     });
+    if ($(".expand-img").length) {
+        $('.expand-img').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
 
-    //     $('.expand-video').magnificPopup({
-    //         type: 'iframe',
-    //         gallery: {
-    //             enabled: true
-    //         }
-    //     });
-    // }
+        $('.expand-video').magnificPopup({
+            type: 'iframe',
+            gallery: {
+                enabled: true
+            }
+        });
+    }
 /*------------------------------------------
     = WATER RIPPLE
 -------------------------------------------*/
@@ -310,13 +310,13 @@
     /*------------------------------------------
         = POPUP YOUTUBE, VIMEO, GMAPS
     -------------------------------------------*/
-    // $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    //     type: 'iframe',
-    //     mainClass: 'mfp-fade',
-    //     removalDelay: 160,
-    //     preloader: false,
-    //     fixedContentPos: false
-    // });
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
 
 
     /*------------------------------------------
