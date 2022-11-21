@@ -108,7 +108,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="count-down-area">
+                {/* <div className="count-down-area">
                     <section className="count-down-section section-padding parallax" data-speed="7">
                         <div className="container">
                             <div className="row">
@@ -365,7 +365,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="contact-form form-style">
-                                        {/* <form id="rsvp-form" action="" className="validate-rsvp-form" method="post">
+                                        <form id="rsvp-form" action="" className="validate-rsvp-form" method="post">
                                             <div className="row">
                                                 <div className="col-12 col-sm-6">
                                                     <input type="text" placeholder="Tên của bạn*" id="fname" name="name" />
@@ -401,7 +401,7 @@ export default function Home() {
                                                     <div id="error"> Đang có lỗi trong quá trình xử lý. Xin thử lại. </div>
                                                 </div>
                                             </div>
-                                        </form> */}
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -454,13 +454,10 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="music-box music-box-2">
-                    {/* <button className="map" onclick=" window.open('https://www.google.com/maps/dir/?api=1&amp;destination=16.045842008044517, 108.22343875656138','_blank')">
-                        <i className="fa fa-map-marker"></i>
-                    </button> */}
                     <button className="music-box-toggle-btn">
                         <i className="fa fa-music" aria-hidden="true"></i>
                     </button>
-                </div>
+                </div> */}
             </main>
 
         </div>
