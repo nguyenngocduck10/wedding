@@ -230,7 +230,7 @@ export default function Home() {
                                                     10:30 - Thứ Sáu, Ngày 26 Tháng 8 2022
                                                 </li>
                                             </ul>
-                                            <a target="_blank" href="https://www.google.com/maps/dir/?api=1&amp;destination=15.489878933773175, 108.30465956409975">
+                                            <a target="noreferrer" href="https://www.google.com/maps/dir/?api=1&amp;destination=15.489878933773175, 108.30465956409975">
                                                 Dẫn đường
                                                 <i className="fa fa-angle-double-right"></i>
                                             </a>
@@ -255,7 +255,7 @@ export default function Home() {
                                                 11:00 - Chủ Nhật, Ngày 28 Tháng 8 2022
                                             </li>
                                         </ul>
-                                        <a target="_blank" href="https://www.google.com/maps/dir/?api=1&amp;destination=16.045842008044517, 108.22343875656138">
+                                        <a target="noreferrer" href="https://www.google.com/maps/dir/?api=1&amp;destination=16.045842008044517, 108.22343875656138">
                                             Dẫn đường
                                             <i className="fa fa-angle-double-right"></i>
                                         </a>
