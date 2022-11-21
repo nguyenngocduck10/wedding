@@ -1,9 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
+const useAudio = url => {
+  const [audio] = useState(new Audio('https://raw.githubusercontent.com/pmq2212/hanh-phuc-quang-mai/master/music/hon_ca_yeu.mp3'));
+  const [playing, setPlaying] = useState(false);
+
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    playing ? audio.play() : audio.pause();
+  },
+    [playing]
+  );
+
+  useEffect(() => {
+    audio.addEventListener('ended', () => setPlaying(false));
+    return () => {
+      audio.removeEventListener('ended', () => setPlaying(false));
+    };
+  }, []);
+
+  return [playing, toggle];
+};
 
 function App() {
+  const [playing, toggle] = useAudio('https://raw.githubusercontent.com/pmq2212/hanh-phuc-quang-mai/master/music/hon_ca_yeu.mp3');
   useEffect(() => {
     const script = document.createElement('script');
 
@@ -16,6 +38,7 @@ function App() {
       document.body.removeChild(script);
     }
   }, []);
+
   return (
     <div className="App">
       <div className="sticky-header">
@@ -64,9 +87,7 @@ function App() {
             <div className="single-slider swiper-slide">
               <div className="container">
                 <div className="slider-content sd-default-content">
-                  <div className="col-lg-12 slider-content--inner"><span>WELCOME TO OUR BEGINNING</span>
-                    <h4>to have and to hold<br />from this day forward</h4>
-                    <p>28 - 08 - 2022</p></div>
+                  <div className="col-lg-12 slider-content--inner"></div>
                 </div>
               </div>
             </div>
@@ -105,10 +126,6 @@ function App() {
               <div className="col-12 col-md-8 clock-area">
                 <div className="count-down-clock">
                   <div id="clock">
-                    {/* <Countdown
-                                                date={_time}
-                                                renderer={renderer}
-                                            /> */}
                   </div>
                 </div>
               </div>
@@ -444,7 +461,7 @@ function App() {
         </div>
       </div>
       <div className="music-box music-box-2">
-        <button className="music-box-toggle-btn">
+        <button className="music-box-toggle-btn" onClick={toggle}>
           <i className="fa fa-music" aria-hidden="true"></i>
         </button>
       </div>

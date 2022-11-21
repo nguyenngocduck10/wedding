@@ -5,7 +5,6 @@
 ==========================================*/
 
 (function($) {
-    var audio = new Audio('https://raw.githubusercontent.com/pmq2212/hanh-phuc-quang-mai/master/music/hon_ca_yeu.mp3');
     var isFirst = true;
     var swiper = new Swiper('.swiper-container', {
         loop: true,
@@ -32,11 +31,17 @@
 
     window.onclick = function (e) {
         if (isFirst) {
-            playAudio(true);
             isFirst = false;
         }
     }
-
+    $(document).ready(function(){
+        let slider_content = `
+        <span>WELCOME TO OUR BEGINNING</span>
+        <h4>to have and to hold<br>from this day forward</h4>
+        <p>28 - 08 - 2022</p>
+        `
+        $('.slider-content--inner').html(slider_content)
+    })
 
     /*================================
     Preloader
@@ -317,29 +322,6 @@
         preloader: false,
         fixedContentPos: false
     });
-
-
-    /*------------------------------------------
-        = TOGGLE MUSUC BIX
-    -------------------------------------------*/
-    if($(".music-box").length) {
-        var musicBtn = $(".music-box-toggle-btn");
-
-        musicBtn.on("click", function() {
-            playAudio();
-            return false;
-        })
-    }
-
-    function playAudio(play) {
-        if (audio.paused) {
-            audio.loop = true;
-            audio.play();
-        } else if (!play) {
-            audio.pause();
-        }
-    }
-
 
 
 }(jQuery));
